@@ -16,4 +16,14 @@ Actualmente no tengo contribuciones.
 ## Hobbies
 Me gusta el ciclismo, leer, cocinar, tocar guitarra, caminar sin rumbo fijo, conocer nuevos lugares, viajar...
 
+## Ilusión óptica
+Como dice el artículo [1] "...Aristóteles notó que si mirabas una cascada y luego enfocabas tu vista en las rocas, estáticas, las rocas parecían moverse en el sentido opuesto al flujo del agua. Este efecto, hoy conocido como “secuela de movimiento” o ilusión de la cascada, hizo señalar a Aristóteles que “podemos confiar en nuestros sentidos, pero ellos pueden ser engañados con facilidad”.". 
+
+Podemos crear imágenes estáticas, pero que aparentemente están en movimiento. Como ejemplo, veamos esta imagen que fue creada con p5.js.
+
+> :P5 sketch=/docs/sketches/optical-ilusion-aa.js, width=720, height=560
+
+### Bibliografía
+[Ilusiones ópticas](https://leioavision.com/ilusiones-opticas-magia-o-ciencia/) [1]
+
 > :ToCPrevNext

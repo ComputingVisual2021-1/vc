@@ -18,12 +18,6 @@
 > [Libs](/docs/snippets/lib)
 > [Sound](/docs/snippets/sound)
 
-> :Collapse label=Exercise 1
-> 
-> [Load and show an Image](/docs/exercises/exercise1/loadimage)
-> [Calculate the negative](/docs/exercises/exercise1/negative)
-> [Image to gray scale](/docs/exercises/exercise1/grayscale)
-
 > :Collapse label=Members
 > 
 > [Andrés Aldana](/docs/members/andres-aldana)
