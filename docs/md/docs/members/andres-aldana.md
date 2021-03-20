@@ -19,7 +19,9 @@ Me gusta el ciclismo, leer, cocinar, tocar guitarra, caminar sin rumbo fijo, con
 ## Ilusión óptica
 Como dice el artículo [1] "...Aristóteles notó que si mirabas una cascada y luego enfocabas tu vista en las rocas, estáticas, las rocas parecían moverse en el sentido opuesto al flujo del agua. Este efecto, hoy conocido como “secuela de movimiento” o ilusión de la cascada, hizo señalar a Aristóteles que “podemos confiar en nuestros sentidos, pero ellos pueden ser engañados con facilidad”.". 
 
-Podemos crear imágenes estáticas, pero que aparentemente están en movimiento. Como ejemplo, veamos esta imagen que fue creada con p5.js.
+Podemos crear imágenes estáticas, pero que aparentemente están en movimiento. O, por otro lado, "...nuestro sentido del tamaño y de la perspectiva puede verse confundido por el contexto, porque nuestra mente está preparada para relacionar ciertos hechos visuales con conceptos de distancia y profundidad; por ejemplo, las líneas diagonales nos hacen crear la ilusión de perspectiva porque así es como nuestro cerebro se orienta en el espacio tridimensional...".
+
+Para este ejemplo, tenemos una imágen en la cual pareciera que las elípses blancas cambian su color a negro, pero que realmente no lo están haciendo.
 
 > :P5 sketch=/docs/sketches/optical-ilusion-aa.js, width=720, height=560
 
