@@ -25,6 +25,35 @@ Para este ejemplo, tenemos una imágen en la cual pareciera que las elípses bla
 
 > :P5 sketch=/docs/sketches/optical-ilusion-aa.js, width=720, height=560
 
+
+```md
+> function setup() {
+>    createCanvas(720, 560);
+>  }
+> 
+>  function draw() {
+>    background(0);
+>  
+>    for (let i = 50; i < height; i += 50) {
+>      for (let j = 50; j < width; j += 50) { 
+>        stroke(150)
+>        strokeWeight(10)
+>        line(0, i, width, i)
+>        line(j, 0, j, height)
+>      }
+>   }
+>  
+>   
+>    for (let i = 50; i < width; i += 50) {
+>      for (let j = 50; j < height; j += 50) {
+>        noStroke()
+>        fill(255)
+>        ellipse(i, j, 18, 18)
+>      }
+>    }
+>  }
+```
+
 ### Bibliografía
 [Ilusiones ópticas](https://leioavision.com/ilusiones-opticas-magia-o-ciencia/) [1]
 
