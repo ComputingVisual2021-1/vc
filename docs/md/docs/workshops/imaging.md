@@ -19,101 +19,43 @@ Adapted from [here](https://p5js.org/es/examples/image-load-and-display-image.ht
 > }
 ```
 
-# Image gray scale
-
-Adapted from [here](https://p5js.org/es/reference/#/p5/filter).
-
-> :P5 sketch=/docs/sketches/gray-scale.js, width=720, height=560
-
-```md
-> :P5 sketch=/docs/sketches/gray-canvas.js, width=720, height=560
->
-> let img; // Declarar variable 'img'.
-> function setup() {
->  createCanvas(720, 560);
->  img = loadImage('/vc/docs/sketches/cat.png'); // Cargar la imagen
-> }
->
-> function draw() {
->  image(img, 0, 0, 720, 560);
->  filter(GRAY);
-> }
-```
-
 # Negative of an image
 
-Adapted from [here](https://p5js.org/es/reference/#/p5/filter).
+El negativo es (r,g,b) -> (255-r, 255-g, 255 -b)
 
 > :P5 sketch=/docs/sketches/negative-image.js, width=720, height=560
 
 ```md
 > :P5 sketch=/docs/sketches/negative-image.js, width=720, height=560
 >
-> let img; // Declarar variable 'img'.
-> function setup() {
->  createCanvas(720, 560);
+>let img;
+>
+>function preload()
+>{
 >  img = loadImage('/vc/docs/sketches/cat.png'); // Cargar la imagen
-> }
+>}
 >
-> function draw() {
->  image(img, 0, 0, 720, 560);
->  filter(INVERT);
-> }
-```
-
-# Convert image to ASCII Art
-
-Adapted from [here](https://www.mathiasbernhard.ch/ascii-art-with-p5js/).
-
-> :P5 sketch=/docs/sketches/image-to-ascii.js, width=720, height=560
-
-```md
->var cnv,img;
->var resdiv;
->var options = [' ','`','.',',-',"':",';_~','"','*|','!l',
->'+=','>','<L','\\i','/^','1?','Jv','r','()cx','7}','sz',
->'3u','2Ckty{','jn','4FVY','5P[]af','qw','Sde','Eo',
->'NOZ','9HXgh','GTU','$AIm','QW','KM','%8','#06@','bp',
->'D','&','R','B'];
-
-> function setup() {
->   //paragraph for display of ascii result
->  resdiv = createP('');
-> 
->  cnv = createCanvas(720, 560);
->  background(255);
+>function setup() {
+>  createCanvas(720, 560);
+>  noLoop();
+>}
 >
->  img = loadImage('/vc/docs/sketches/cat.png', function(pic){
->    calcImg(pic);
->  });
-> }
->
-> function draw() {
->  image(img, 0, 0, 720, 560);
-> }
->
-> function calcImg(pic) {
->  var res = '<pre>';
->  for (var i=0; i<60; i++) {
->    var line = '';
->    for (var j=0; j<140; j++) {
->      var x = pic.get(2+round(j*5.714),5+i*10);
->      var v = round((1-x[0]/255.0)*40);
->      var index = floor(random(options[v].length));
->      var chr = options[v][index];
->      if (chr==' ') chr='&nbsp;';
->      if (chr=='<') chr='&lt;';
->      if (chr=='>') chr='&gt;';
->      if (chr=='"') chr='&quot;';
->      line += chr;
->    }
->    res += line+'<br>';
+>function draw() {
+>  image(img, 0, 0,720, 560);
+>  let d = pixelDensity(); //sin argumentos retorna la densidad de pixeles actual del bosquejo.
+>  let pixelsLength = 4 * (width * d) * (height * d);
+>  loadPixels();
+>  for (let i = 0; i < pixelsLength; i += 4) {
+>    pixels[i] = 255 - pixels[i];
+>   pixels[i + 1] = 255 - pixels[i + 1];
+>    pixels[i + 2] = 255 - pixels[i + 2];
 >  }
->  res += '</pre>'
->  resdiv.html(res);
-> }
+>  updatePixels();
+>}
+
 ```
-# Convert image to gray scale using average
+# Gray Scale
+## Convert image to gray scale using average
 
 Adapted from [here](https://codepen.io/duketeam/pen/ALEByA)
 and [here](https://p5js.org/es/reference/#/p5/pixels).
@@ -149,7 +91,8 @@ and [here](https://p5js.org/es/reference/#/p5/pixels).
 > }
 ```
 
-# Convert image to gray scale using Luminance
+
+## Convert image to gray scale using Luminance
 
 Adapted from [here](https://p5js.org/es/reference/#/p5/pixels)
 review model of [here](https://en.wikipedia.org/wiki/Luminance)
@@ -186,5 +129,53 @@ and [here](https://en.wikipedia.org/wiki/Luma_%28video%29)
 > }
 ```
 
+# Convert image to ASCII Art
+
+Adapted from [here](https://www.mathiasbernhard.ch/ascii-art-with-p5js/).
+
+> :P5 sketch=/docs/sketches/image-to-ascii.js, width=720, height=560
+
+```md
+>var img;
+>var resdiv;
+>var options = [' ','`','.',',-',"':",';_~','"','*|','!l',
+>'+=','>','<L','\\i','/^','1?','Jv','r','()cx','7}','sz',
+>'3u','2Ckty{','jn','4FVY','5P[]af','qw','Sde','Eo',
+>'NOZ','9HXgh','GTU','$AIm','QW','KM','%8','#06@','bp',
+>'D','&','R','B'];
+>
+>function preload()
+>{
+>  img = loadImage('/vc/docs/sketches/cat.png');
+>}
+>
+>function setup() {
+>  resdiv = createP('');
+>  img.resize(720, 560);
+>  calcImg(img);
+>}
+>
+>function calcImg(pic) {
+>  var res = '<pre>';
+>  for (var i=0; i<60; i++) {
+>    var line = '';
+>    for (var j=0; j<140; j++) {
+>      var x = pic.get(2+round(j*5.714),5+i*10);
+>      var v = round((1-x[0]/255.0)*40);
+>      var index = floor(random(options[v].length));
+>      var chr = options[v][index];
+>      if (chr==' ') chr='&nbsp;';
+>      if (chr=='<') chr='&lt;';
+>      if (chr=='>') chr='&gt;';
+>      if (chr=='"') chr='&quot;';
+>      line += chr;
+>    }
+>    res += line+'<br>';
+>  }
+>  res += '</pre>'
+>  resdiv.html(res);
+>}
+
+```
 
 > :ToCPrevNext

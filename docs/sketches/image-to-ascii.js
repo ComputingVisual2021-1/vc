@@ -1,4 +1,4 @@
-var cnv,img;
+var img;
 var resdiv;
 var options = [' ','`','.',',-',"':",';_~','"','*|','!l',
 '+=','>','<L','\\i','/^','1?','Jv','r','()cx','7}','sz',
@@ -6,21 +6,17 @@ var options = [' ','`','.',',-',"':",';_~','"','*|','!l',
 'NOZ','9HXgh','GTU','$AIm','QW','KM','%8','#06@','bp',
 'D','&','R','B'];
 
+function preload()
+{
+  img = loadImage('/vc/docs/sketches/cat.png');
+}
+
 function setup() {
-  //paragraph for display of ascii result
   resdiv = createP('');
-  
-  cnv = createCanvas(720, 560);
-  background(255);
-
-  img = loadImage('/vc/docs/sketches/cat.png', function(pic){
-    calcImg(pic);
-  });
+  img.resize(720, 560);
+  calcImg(img);
 }
 
-function draw() {
-  image(img, 0, 0, 720, 560);
-}
 
 function calcImg(pic) {
   var res = '<pre>';

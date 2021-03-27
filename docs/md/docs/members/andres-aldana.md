@@ -21,7 +21,11 @@ Como dice el artículo [1] "...Aristóteles notó que si mirabas una cascada y l
 
 Podemos crear imágenes estáticas, pero que aparentemente están en movimiento. O, por otro lado, "...nuestro sentido del tamaño y de la perspectiva puede verse confundido por el contexto, porque nuestra mente está preparada para relacionar ciertos hechos visuales con conceptos de distancia y profundidad; por ejemplo, las líneas diagonales nos hacen crear la ilusión de perspectiva porque así es como nuestro cerebro se orienta en el espacio tridimensional...".
 
-Para este ejemplo, tenemos una imágen en la cual pareciera que las elípses blancas cambian su color a negro, pero que realmente no lo están haciendo.
+### Scintillating Grid Illusion 
+
+Una ilusión de cuadrícula es cualquier tipo de cuadrícula que engaña la visión de una persona. Los dos tipos más comunes de ilusiones de cuadrícula son la ilusión de cuadrícula de Hermann y la ilusión de cuadrícula centelleante.
+
+La ilusión de rejilla centelleante es una ilusión óptica, descubierta por E. y B. Lingelbach y M. Schrauf en 1994. A menudo se considera una variación de la ilusión de rejilla de Hermann, pero posee diferentes propiedades. Se construye superponiendo discos blancos en las intersecciones. de barras ortogonales grises sobre fondo negro. Los puntos oscuros parecen aparecer y desaparecer rápidamente en intersecciones aleatorias, de ahí la etiqueta "centelleante". Cuando una persona mantiene sus ojos directamente en una única intersección, el punto oscuro no aparece. Los puntos oscuros desaparecen si uno está demasiado cerca o demasiado lejos de la imagen.
 
 > :P5 sketch=/docs/sketches/optical-ilusion-aa.js, width=720, height=560
 
@@ -56,5 +60,6 @@ Para este ejemplo, tenemos una imágen en la cual pareciera que las elípses bla
 
 ### Bibliografía
 [Ilusiones ópticas](https://leioavision.com/ilusiones-opticas-magia-o-ciencia/) [1]
+[Grid Illusion](https://psychology.wikia.org/wiki/Grid_illusion#:~:text=The%20Scintillating%20grid%20illusion%20is,the%20dot%20does%20not%20appear.) [2]
 
 > :ToCPrevNext

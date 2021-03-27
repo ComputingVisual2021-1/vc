@@ -1,6 +1,6 @@
 [Home](/)
 
-> :Collapse label=Shaders
+> :Collapse label=Workshops
 > 
 > [Imaging & Video](/docs/workshops/imaging)
 > [Rendering](/docs/workshops/rendering)
