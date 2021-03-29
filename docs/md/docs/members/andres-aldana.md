@@ -23,12 +23,9 @@ Podemos crear imágenes estáticas, pero que aparentemente están en movimiento.
 
 ### Scintillating Grid Illusion 
 
-Una ilusión de cuadrícula es cualquier tipo de cuadrícula que engaña la visión de una persona. Los dos tipos más comunes de ilusiones de cuadrícula son la ilusión de cuadrícula de Hermann y la ilusión de cuadrícula centelleante.
-
-La ilusión de rejilla centelleante es una ilusión óptica, descubierta por E. y B. Lingelbach y M. Schrauf en 1994. A menudo se considera una variación de la ilusión de rejilla de Hermann, pero posee diferentes propiedades. Se construye superponiendo discos blancos en las intersecciones. de barras ortogonales grises sobre fondo negro. Los puntos oscuros parecen aparecer y desaparecer rápidamente en intersecciones aleatorias, de ahí la etiqueta "centelleante". Cuando una persona mantiene sus ojos directamente en una única intersección, el punto oscuro no aparece. Los puntos oscuros desaparecen si uno está demasiado cerca o demasiado lejos de la imagen.
+Una ilusión de cuadricula es una cuadrícula que engaña la percepción de lo que ve una persona. Hay dos tipos, son la ilusión de cuadrícula de Hermann y la ilusión de cuadrícula centelleante. La priemra es una ilusión óptica, descubierta por E. y B. Lingelbach y M. Schrauf en 1994. A menudo se considera una variación de la ilusión de rejilla de Hermann, pero posee diferentes propiedades. Se construye superponiendo discos blancos en las intersecciones. de barras ortogonales grises sobre fondo negro. Los puntos oscuros parecen aparecer y desaparecer rápidamente en intersecciones aleatorias, de ahí la etiqueta "centelleante". Cuando una persona mantiene sus ojos directamente en una única intersección, el punto oscuro no aparece. Los puntos oscuros desaparecen si uno está demasiado cerca o demasiado lejos de la imagen.
 
 > :P5 sketch=/docs/sketches/optical-ilusion-aa.js, width=720, height=560
-
 
 ```md
 > function setup() {
