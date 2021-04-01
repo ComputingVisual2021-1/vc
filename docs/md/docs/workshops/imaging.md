@@ -179,7 +179,7 @@ Adapted from [here](https://www.mathiasbernhard.ch/ascii-art-with-p5js/).
 ```
 # Convert Image to photo-mosaic
 
-Adapted from [here](https://www.youtube.com/watch?v=nnlAH1zDBDE).
+Adapted from [here](https://github.com/ITPNYU/Obamathon/blob/master/examples/Processing/ObamaMosaic/ObamaMosaic.pde).
 
 <img src="https://i.ibb.co/hCXGrb6/perro.png" alt="perro" style="width: 380px;" />
 <img src="https://i.ibb.co/kXx1B18/perro-mosaic.png" alt="perro_mosaic" style="width: 380px;"/> 
