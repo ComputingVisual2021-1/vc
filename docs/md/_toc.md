@@ -22,3 +22,4 @@
 > 
 > [Andrés Aldana](/docs/members/andres-aldana)
 > [Andrés García](/docs/members/andres-garcia)
+> [Camilo Carranza](/docs/members/camilo-carranza)
