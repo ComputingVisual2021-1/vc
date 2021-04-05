@@ -21,3 +21,4 @@
 > :Collapse label=Members
 > 
 > [Andrés Aldana](/docs/members/andres-aldana)
+> [Andrés García](/docs/members/andres-garcia)
