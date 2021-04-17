@@ -2,7 +2,16 @@
 
 > :Collapse label=Workshops
 > 
-> [Imaging & Video](/docs/workshops/imaging)
+> > :Collapse label=Imaging & Video
+> >
+> > [Problem Stament](/docs/workshops/problems_first_workshop)
+> > [Original](/docs/workshops/imaging)
+> > [Load and Show an Image](/docs/workshops/load_image)
+> > [Negative of an Image](/docs/workshops/negative_image)
+> > [Gray Scale of an Image](/docs/workshops/gray_scale_image)
+> > [Image to ASCII art](/docs/workshops/ascii_art_image)
+> > [Conclusions](/docs/workshops/conclusions_w1)
+> 
 > [Rendering](/docs/workshops/rendering)
 > [Algovis](/docs/workshops/algovis)
 > [Computer Graphics](/docs/workshops/cg)
@@ -17,6 +26,7 @@
 > [3D](/docs/snippets/3d)
 > [Libs](/docs/snippets/lib)
 > [Sound](/docs/snippets/sound)
+> [Formulae](/docs/snippets/formulae)
 
 > :Collapse label=Members
 > 
