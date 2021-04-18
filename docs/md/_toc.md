@@ -9,7 +9,10 @@
 > > [Load and Show an Image](/docs/workshops/load_image)
 > > [Negative of an Image](/docs/workshops/negative_image)
 > > [Gray Scale of an Image](/docs/workshops/gray_scale_image)
+> > [Gray Scale of a Video](/docs/workshops/gray_scale_video)
 > > [Image to ASCII art](/docs/workshops/ascii_art_image)
+> > [Convert Image to PhotoMosaic](/docs/workshops/image_photomosaic)
+> > [Kernels](/docs/workshops/kernels)
 > > [Conclusions](/docs/workshops/conclusions_w1)
 > 
 > [Rendering](/docs/workshops/rendering)
