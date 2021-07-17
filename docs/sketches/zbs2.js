@@ -3,7 +3,7 @@ let img; // Declarar variable 'img'.
 
 function setup() {
   createCanvas(350, 150);
-  img = loadImage('/vc/docs/sketches/zbs2.png'); // Cargar la imagen
+  img = loadImage('/vc/docs/sketches/zbs2.PNG'); // Cargar la imagen
 }
 
 function draw() {
