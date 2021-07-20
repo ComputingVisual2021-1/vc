@@ -2,7 +2,6 @@ const width = 720;
 const height = 560;
 var img; 
 let _shader;
-let v = 1.0 / 9.0;
 let kernel = [ 0.0, -1.0, 0.0, -1.0, 5.0, -1.0, 0.0, -1.0, 0.0 ]; 
 
 function preload(){

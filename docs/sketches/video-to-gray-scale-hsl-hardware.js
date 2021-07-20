@@ -9,7 +9,7 @@ function preload() {
     "/vc/docs/sketches/texture.vert",
     "/vc/docs/sketches/texture_luma.frag"
   );
-  video = createVideo("/vc/docs/sketches/fingers.webm");
+  video = createVideo('/vc/docs/sketches/fingers.mov', '/vc/docs/sketches/fingers.webm');
 }
 function setup() {
   createCanvas(width, height, WEBGL);
