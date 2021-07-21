@@ -6,9 +6,9 @@ Se debe realizar una indagación teórica de algún algoritmo de visibilidad o a
 Para la solución de este taller se realizó la indagación sobre el algoritmo Z-buffer.
 
 ## Z-buffer
-Un buffer profundo, también conocido como Z-buffer, es un tipo de buffer de datos usado en computación gráfica para representar información de profundidad de objetos en el espacio 3D desde una perspectiva particular. Son una ayuda para renderizar una escena para garantizar que los polígonos correctos ocluyan (obstruir) correctamente otros polígonos.
+Un buffer de profundidad, también conocido como Z-buffer, es un tipo de buffer de datos usado en computación gráfica para representar información de profundidad de objetos en el espacio 3D desde una perspectiva particular. Son una ayuda para renderizar una escena que garantiza que los polígonos correctos ocluyan (obstruyan) correctamente otros polígonos (que se encuentran detrás).
 
-> :P5 sketch=/docs/sketches/example-z-buffer.js, width=650, height=560
+> :P5 sketch=/docs/sketches/example-z-buffer.js, width=603, height=781
 
 Fue inicialmente descrito por Wolfgang Straßer en su tesis de doctorado sobre algoritmos rápidos para renderizar objetos ocluídos.
 
