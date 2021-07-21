@@ -19,8 +19,18 @@ La granuralidad de un z-búfer tiene una gran influencia en la calidad de la esc
 
 ### Usos
 Es una tecnología usada en casi todas las computadoras, portátiles y teléfonos móviles contemporáneos para realizar gráficos de computadora en 3D. El uso principal ahora es para videojuegos, que requieren un procesamiento rápido y preciso de escenas en 3D. El z-búfer se implementa en hardware dentro de las tarjetas gráficas de consumo. También, se utiliza implementado como software para producir efectos especiales generados por computadora para películas.
-Además, los datos del z-búfer obtenidos de la representación de una superficie desde el punto de vista de una luz permiten la creación de sombras mediante la técnica de mapeo de sombras.
 
+Entre los múltiples usos de los z-búferes se encuentran:
+
+- Simular el efecto de medios semitransparentes uniformemente densos dentro de una escena, como niebla, humo o grandes volúmenes de agua.
+- Simulación de poca profundidad de campo, donde algunas partes de una escena parecen estar desenfocadas. Los mapas de profundidad se pueden utilizar para difuminar selectivamente una imagen en diversos grados. Una profundidad de campo baja puede ser una característica de la fotografía macro y, por lo tanto, la técnica puede formar parte del proceso de falsificación en miniatura.
+- Mapeo de sombras: parte de un proceso utilizado para crear sombras proyectadas por iluminación en gráficos de computadora en 3D. En este uso, los mapas de profundidad se calculan desde la perspectiva de las luces, no desde el espectador.
+- Proporcionar la información de distancia necesaria para crear y generar autostereogramas y en otras aplicaciones relacionadas destinadas a crear la ilusión de visualización 3D a través de estereoscopía.
+- Dispersión del subsuelo: se puede utilizar como parte de un proceso para agregar realismo al simular las propiedades semitransparentes de materiales translúcidos como la piel humana.
+- En la visión por computadora, las imágenes de vista única o de vista múltiple, los mapas de profundidad, u otros tipos de imágenes, se utilizan para modelar formas 3D o reconstruirlas. Los mapas de profundidad pueden ser generados por escáneres 3D o reconstruidos a partir de múltiples imágenes.
+- En Visión artificial y visión por computadora, para permitir el procesamiento de imágenes 3D mediante herramientas de imagen 2D.
+- Generación y reconstrucción de formas 3D a partir de siluetas o mapas de profundidad de una o varias vistas
+- Hacer conjuntos de datos de imágenes de profundidad 
 > :P5 sketch=/docs/sketches/depthmap.js, width=700, height=600, lib1="https://cdn.jsdelivr.net/gh/freshfork/p5.EasyCam@1.2.1/p5.easycam.js"
 
 ### Desarrollo
