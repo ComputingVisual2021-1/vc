@@ -21,7 +21,7 @@ La granuralidad de un z-búfer tiene una gran influencia en la calidad de la esc
 Es una tecnología usada en casi todas las computadoras, portátiles y teléfonos móviles contemporáneos para realizar gráficos de computadora en 3D. El uso principal ahora es para videojuegos, que requieren un procesamiento rápido y preciso de escenas en 3D. El z-búfer se implementa en hardware dentro de las tarjetas gráficas de consumo. También, se utiliza implementado como software para producir efectos especiales generados por computadora para películas.
 Además, los datos del z-búfer obtenidos de la representación de una superficie desde el punto de vista de una luz permiten la creación de sombras mediante la técnica de mapeo de sombras.
 
-> :P5 sketch=/docs/sketches/depthmap.js, width=700, height=600
+> :P5 sketch=/docs/sketches/depthmap.js, width=700, height=600, lib1="https://cdn.jsdelivr.net/gh/freshfork/p5.EasyCam@1.2.1/p5.easycam.js"
 
 ### Desarrollo
 Incluso con una granularidad lo suficientemente pequeña, pueden surgir problemas de calidad cuando la precisión en los valores de distancia del z-búfer no se distribuye uniformemente a lo largo de la distancia. Los valores más cercanos son mucho más precisos ( y por lo tant pueden mostrar mejor los objetos más cercanos) que los valores que están más lejos. Generalmente, esto es deseable, pero a veces hará que aparezcan artefactos a medida que los objetos se vuelven más distantes. Una variación del almacenamiento en z-búfer queda como resultado una precisión distribuida de manera más uniforme se denomina almacenamiento en búfer w.
