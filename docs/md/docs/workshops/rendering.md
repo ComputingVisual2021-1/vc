@@ -118,7 +118,7 @@ Dependiendo de la aplicación se obtendrán mejores resultados con un z-búfer q
 
 ### Bibliografía
 
-[z-buffering](https://en.wikipedia.org/wiki/z-búfering) [1]
+[z-buffering](https://en.wikipedia.org/wiki/z-buffer) [1]
 [Depth map example](https://github.com/freshfork/p5.EasyCam/blob/master/examples/RandomBoxes/RandomBoxes.js)[2]
 
 > :ToCPrevNext
