@@ -29,8 +29,8 @@ Entre los múltiples usos de los z-búferes se encuentran:
 - Dispersión del subsuelo: se puede utilizar como parte de un proceso para agregar realismo al simular las propiedades semitransparentes de materiales translúcidos como la piel humana.
 - En la visión por computadora, las imágenes de vista única o de vista múltiple, los mapas de profundidad, u otros tipos de imágenes, se utilizan para modelar formas 3D o reconstruirlas. Los mapas de profundidad pueden ser generados por escáneres 3D o reconstruidos a partir de múltiples imágenes.
 - En Visión artificial y visión por computadora, para permitir el procesamiento de imágenes 3D mediante herramientas de imagen 2D.
-- Generación y reconstrucción de formas 3D a partir de siluetas o mapas de profundidad de una o varias vistas
-- Hacer conjuntos de datos de imágenes de profundidad 
+- Generación y reconstrucción de formas 3D a partir de siluetas o mapas de profundidad de una o varias vistas.
+- Hacer conjuntos de datos de imágenes de profundidad.
 > :P5 sketch=/docs/sketches/depthmap.js, width=700, height=600, lib1="https://cdn.jsdelivr.net/gh/freshfork/p5.EasyCam@1.2.1/p5.easycam.js"
 
 ### Desarrollo
