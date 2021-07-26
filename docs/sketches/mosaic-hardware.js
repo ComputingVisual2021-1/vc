@@ -45,7 +45,7 @@ function setup() {
 
 function draw() {
     let posSlider = 16
-    myShader.setUniform("resolution", parseInt(500 / posSlider));
+    mosaic.setUniform("resolution", parseInt(500 / posSlider));
     beginShape();
     vertex(-700 / 2, -900 / 2, 0, 0, 0);
     vertex(700 / 2, -900 / 2, 0, 1, 0);
