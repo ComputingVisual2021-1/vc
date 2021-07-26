@@ -1,47 +1,53 @@
-
+let image;
 let ascii;
-let imagen;
 
 function preload() {
-  ascii = loadShader('/vc/docs/sketches/ascii.vert', '/vc/docs/sketches/ascii.frag');
-  imagen = loadImage('/vc/docs/sketches/medieval.jpg');
+    //Precargar imagen base y shaders
+    image = loadImage('/vc/docs/sketches/medieval.jpg');
+    ascii = loadShader('/vc/docs/sketches/ascii.vert', '/vc/docs/sketches/ascii.frag');
 
-  //cargar las imagenes que van a componer el mosaico
-  aux1 = loadImage('/vc/docs/sketches/ascii0.jpg');
-  aux2 = loadImage('/vc/docs/sketches/ascii1.jpg');
-  aux3 = loadImage('/vc/docs/sketches/ascii2.jpg');
-  aux4 = loadImage('/vc/docs/sketches/ascii3.jpg');
-  aux5 = loadImage('/vc/docs/sketches/ascii4.jpg');
-  aux6 = loadImage('/vc/docs/sketches/ascii5.jpg');
-  aux7 = loadImage('/vc/docs/sketches/ascii6.jpg');
-  aux8 = loadImage('/vc/docs/sketches/ascii7.jpg');
+    //Cargar imagenes de dataset para ascii
+    img1 = loadImage('/vc/docs/sketches/ascii0.jpg'); //nivel de brillo mas bajo
+    img2 = loadImage('/vc/docs/sketches/ascii0.jpg');
+    img3 = loadImage('/vc/docs/sketches/ascii3.jpg');
+    img4 = loadImage('/vc/docs/sketches/ascii4.jpg');
+    img5 = loadImage('/vc/docs/sketches/ascii5.jpg');
+    img6 = loadImage('/vc/docs/sketches/ascii6.jpg');
+    img7 = loadImage('/vc/docs/sketches/ascii7.jpg');
+    img8 = loadImage('/vc/docs/sketches/ascii7.jpg');
+    img9 = loadImage('/vc/docs/sketches/ascii7.jpg');
+    img10 = loadImage('/vc/docs/sketches/ascii7.jpg'); //nivel de brillo mas alto    
 }
 
 function setup() {
-  // put setup code here
-  createCanvas(512, 512, WEBGL);
-  textureMode(NORMAL);
-  noStroke();
-  shader(ascii)
+    //Crear canvas
+    createCanvas(512, 512, WEBGL);
+    textureMode(NORMAL);
+    noStroke();
+    //definir los shaders a usar
+    shader(ascii);
+    //Pasar imagenes a fragment shader
+    ascii.setUniform('img', image);
+    ascii.setUniform('img1', img1);
+    ascii.setUniform('img2', img2);
+    ascii.setUniform('img3', img3);
+    ascii.setUniform('img4', img4);
+    ascii.setUniform('img5', img5);
+    ascii.setUniform('img6', img6);
+    ascii.setUniform('img7', img7);
+    ascii.setUniform('img8', img8);
+    ascii.setUniform('img9', img9);
+    ascii.setUniform('img10', img10);
 
-  ascii.setUniform("imagen", imagen);
-  ascii.setUniform("aux1", aux1);
-  ascii.setUniform("aux2", aux2);
-  ascii.setUniform("aux3", aux3);
-  ascii.setUniform("aux4", aux4);
-  ascii.setUniform("aux5", aux5);
-  ascii.setUniform("aux6", aux6);
-  ascii.setUniform("aux7", aux7);
-  ascii.setUniform("aux8", aux8);
 }
 
 function draw() {
-  // put drawing code here
-  beginShape();
-  ascii.setUniform("resolution", 512);
-  vertex(-512 / 2, -512 / 2, 0, 0, 0);
-  vertex(512 / 2, -512 / 2, 0, 1, 0);
-  vertex(512 / 2, 512 / 2, 0, 1, 1);
-  vertex(-512 / 2, 512 / 2, 0, 0, 1);
-  endShape();
+    let posSlider = 8
+    ascii.setUniform("res", parseInt(500 / posSlider));
+    beginShape();
+    vertex(-700 / 2, -900 / 2, 0, 0, 0);
+    vertex(700 / 2, -900 / 2, 0, 1, 0);
+    vertex(700 / 2, 900 / 2, 0, 1, 1);
+    vertex(-700 / 2, 900 / 2, 0, 0, 1);
+    endShape();
 }
