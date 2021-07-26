@@ -40,9 +40,9 @@ function draw() {
   // put drawing code here
   text("Mosaico construido con 9 imagenes",10, 50)
   beginShape();
-  vertex(-W / 2, -H / 2, 0, 0, 0);
-  vertex(W / 2, -H / 2, 0, 1, 0);
-  vertex(W / 2, H / 2, 0, 1, 1);
-  vertex(-W / 2, H / 2, 0, 0, 1);
+  vertex(-700 / 2, -900 / 2, 0, 0, 0);
+  vertex(700 / 2, -900 / 2, 0, 1, 0);
+  vertex(700 / 2, 900 / 2, 0, 1, 1);
+  vertex(-700 / 2, 900 / 2, 0, 0, 1);
   endShape();
 }

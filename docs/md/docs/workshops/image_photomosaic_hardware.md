@@ -6,7 +6,7 @@ Un fotomosaico es una imagen (usualmente una fotografía) que ha sido dividida e
 
 Bajo el concepto anterior, primero escogemos la imagen original que se utilizara como base:
 
-> :P5 sketch=/docs/sketches/perro.js, width=250, height=250
+> :P5 sketch=/docs/sketches/perro.js, width=250, height=400
 
 > :Tabs
 > > :Tab title= **Imagen**
