@@ -36,7 +36,6 @@ function setup() {
 
 function draw() {
   // put drawing code here
-  text("ASCII art con 8 símbolos")
   beginShape();
   vertex(-512 / 2, -512 / 2, 0, 0, 0);
   vertex(512 / 2, -512 / 2, 0, 1, 0);
