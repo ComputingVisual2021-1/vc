@@ -42,7 +42,7 @@ function setup() {
 }
 
 function draw() {    
-    ascii.setUniform("res", parseInt(1600 / 32));
+    ascii.setUniform("res", parseInt(1600 / 64));
     beginShape();
     vertex(-1600 / 2, -1600 / 2, 0, 0, 0);
     vertex(1600 / 2, -1600 / 2, 0, 1, 0);
