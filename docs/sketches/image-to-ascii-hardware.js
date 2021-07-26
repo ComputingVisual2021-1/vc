@@ -38,7 +38,7 @@ function setup() {
     ascii.setUniform('img8', img8);
     ascii.setUniform('img9', img9);
     ascii.setUniform('img10', img10);
-
+    //seteado
 }
 
 function draw() {    
