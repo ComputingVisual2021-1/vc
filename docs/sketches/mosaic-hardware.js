@@ -24,7 +24,7 @@ function setup() {
   noStroke();
   shader(mosaico)
 
-  mosaico.setUniform("image", imagen);
+  mosaico.setUniform("imagen", imagen);
   mosaico.setUniform("aux1", aux1);
   mosaico.setUniform("aux2", aux2);
   mosaico.setUniform("aux3", aux3);
