@@ -11,7 +11,7 @@ Para la realización de este código se divide la imagen en secciones que depend
 > :Tabs
 > > :Tab title= **Imagen**
 > > 
-> > > :P5 sketch=/docs/sketches/image-to-ascii-hardware.js, width=800, height=600
+> > > :P5 sketch=/docs/sketches/image-to-ascii-hardware.js, width=800, height=800
 >
 > > :Tab title= **Código p5**
 > > >
