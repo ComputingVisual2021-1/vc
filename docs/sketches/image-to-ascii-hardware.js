@@ -44,9 +44,9 @@ function setup() {
 function draw() {    
     ascii.setUniform("res", parseInt(512 / 32));
     beginShape();
-    vertex(-512 / 2, -512 / 2, 0, 0, 0);
-    vertex(512 / 2, -512 / 2, 0, 1, 0);
-    vertex(512 / 2, 512 / 2, 0, 1, 1);
-    vertex(-512 / 2, 512 / 2, 0, 0, 1);
+    vertex(-1600 / 2, -1600 / 2, 0, 0, 0);
+    vertex(1600 / 2, -1600 / 2, 0, 1, 0);
+    vertex(1600 / 2, 1600 / 2, 0, 1, 1);
+    vertex(-1600 / 2, 1600 / 2, 0, 0, 1);
     endShape();
 }
