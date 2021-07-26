@@ -42,8 +42,8 @@ function setup() {
 }
 
 function draw() {
-    let posSlider = 8
-    ascii.setUniform("res", parseInt(500 / posSlider));
+    
+    ascii.setUniform("res", parseInt(512 / 16));
     beginShape();
     vertex(-700 / 2, -900 / 2, 0, 0, 0);
     vertex(700 / 2, -900 / 2, 0, 1, 0);
