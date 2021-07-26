@@ -1,4 +1,4 @@
-//variables
+
 let ascii;
 let imagen;
 
