@@ -29,30 +29,30 @@ void main() {
 
     vec4 color = texture2D(imagen, imageCoord);
 
-    float iluminacion = 0.299*color.r + 0.587*color.g + 0.114*color.b;
+    float brillo = (0.299*pixelColor.r + 0.587*pixelColor.g + 0.114*pixelColor.b)*255.0;
 
-    if(iluminacion < 0.111 && iluminacion >= 0.0){
+    if(brillo < 28.3 && brillo >= 0.0){
          gl_FragColor = texture2D(aux1, realCoord );
 
-    }else if(iluminacion < 0.222 && iluminacion >= 0.111){
+    }else if(brillo < 56.6 && brillo >= 28.3){
          gl_FragColor = texture2D(aux2, realCoord );
         
-    }else if(iluminacion  < 0.333 && iluminacion >= 0.222){
+    }else if(brillo < 84.9 && brillo >= 56.6){
          gl_FragColor = texture2D(aux3, realCoord);
         
-    }else if(iluminacion < 0.444 && iluminacion >= 0.333){
+    }else if(brillo < 113.23 && brillo >= 84.9){
          gl_FragColor = texture2D(aux4, realCoord);
         
-    }else if(iluminacion < 0.555 && iluminacion >= 0.444){
+    }else if(brillo < 141.6 && brillo >= 113.23){
          gl_FragColor = texture2D(aux5, realCoord);
         
-    }else if(iluminacion < 0.777 && iluminacion >= 0.666){
+    }else if(brillo < 169.9 && brillo >= 141.6){
          gl_FragColor = texture2D(aux6, realCoord);
         
-    }else if(iluminacion < 0.888 && iluminacion >= 0.777){
+    }else if(brillo < 198.3 && brillo >= 169.9{
          gl_FragColor = texture2D(aux7, realCoord);
         
-    }else if(iluminacion < 0.950 && iluminacion >= 0.888){
+    }else if(brillo < 226.2 && brillo >= 198.3){
          gl_FragColor = texture2D(aux8, realCoord);
         
     }else{
