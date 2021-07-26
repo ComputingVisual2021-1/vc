@@ -13,44 +13,44 @@ uniform sampler2D img8;
 uniform sampler2D img9;
 uniform sampler2D img10;
 
-uniform float resolution;
+uniform float res;
 
 varying vec4 vVertexColor;
 varying vec2 vTexCoord;
 
 void main() {
 
-    vec2 symbolCoord = vTexCoord * resolution;
+    vec2 gCoord = vTexCoord * re;
 
-    vec2 imageCoord = floor(symbolCoord);
+    vec2 imgCoord = floor(gCoord);
 
-    symbolCoord = symbolCoord - imageCoord;
+    gCoord = gCoord - imgCoord;
 
-    imageCoord = imageCoord * vec2(1.0) / vec2(resolution);
+    imgCoord = imgCoord * vec2(1.0) / vec2(res);
 
-    vec4 pixelColor = texture2D(img, imageCoord);
+    vec4 color = texture2D(img, imgCoord);
 
-    float mean = pixelColor.r*0.299 + pixelColor.g*0.587 + pixelColor.b*0.114;
+    float luminosity = color.r*0.299 + color.g*0.587 + color.b*0.114;
 
-    if (mean < 0.1 && mean >= 0.0){
-        gl_FragColor = texture2D(img1, symbolCoord);
-    } else if (mean < 0.2 && mean >= 0.1){
-        gl_FragColor = texture2D(img2, symbolCoord);
-    } else if (mean < 0.3 && mean >= 0.2){
-        gl_FragColor = texture2D(img3, symbolCoord);
-    } else if (mean < 0.4 && mean >= 0.3){
-        gl_FragColor = texture2D(img4, symbolCoord);
-    } else if (mean < 0.5 && mean >= 0.4){
-        gl_FragColor = texture2D(img5, symbolCoord);
-    } else if (mean < 0.6 && mean >= 0.5){
-        gl_FragColor = texture2D(img6, symbolCoord);
-    } else if(mean < 0.7 && mean >= 0.6){
-        gl_FragColor = texture2D(img7, symbolCoord);
-    } else if(mean < 0.8 && mean >= 0.7){
-        gl_FragColor = texture2D(img8, symbolCoord);
-    } else if(mean < 0.9 && mean >= 0.8){
-        gl_FragColor = texture2D(img9, symbolCoord);
-    } else if(mean < 1.0 && mean >= 0.9){
-        gl_FragColor = texture2D(img10, symbolCoord); 
+    if (luminosity < 0.1 && luminosity >= 0.0){
+        gl_FragColor = texture2D(img1, gCoord);
+    } else if (luminosity < 0.2 && luminosity >= 0.1){
+        gl_FragColor = texture2D(img2, gCoord);
+    } else if (luminosity < 0.3 && luminosity >= 0.2){
+        gl_FragColor = texture2D(img3, gCoord);
+    } else if (luminosity < 0.4 && luminosity >= 0.3){
+        gl_FragColor = texture2D(img4, gCoord);
+    } else if (luminosity < 0.5 && luminosity >= 0.4){
+        gl_FragColor = texture2D(img5, gCoord);
+    } else if (luminosity < 0.6 && luminosity >= 0.5){
+        gl_FragColor = texture2D(img6, gCoord);
+    } else if(luminosity < 0.7 && luminosity >= 0.6){
+        gl_FragColor = texture2D(img7, gCoord);
+    } else if(luminosity < 0.8 && luminosity >= 0.7){
+        gl_FragColor = texture2D(img8, gCoord);
+    } else if(luminosity < 0.9 && luminosity >= 0.8){
+        gl_FragColor = texture2D(img9, gCoord);
+    } else if(luminosity < 1.0 && luminosity >= 0.9){
+        gl_FragColor = texture2D(img10, gCoord); 
     }
 }
