@@ -30,27 +30,27 @@ void main() {
 
     vec4 pixelColor = texture2D(img, imageCoord);
 
-    float mean = (pixelColor.r*0.299 + pixelColor.g*0.587 + pixelColor.b*0.114)*255.0;
+    float mean = pixelColor.r*0.299 + pixelColor.g*0.587 + pixelColor.b*0.114;
 
-    if (mean < 25.5){
+    if (mean < 0.1 && mean >= 0.0){
         gl_FragColor = texture2D(img1, symbolCoord);
-    } else if (mean < 51.0){
+    } else if (mean < 0.2 && mean >= 0.1){
         gl_FragColor = texture2D(img2, symbolCoord);
-    } else if (mean < 76.5){
+    } else if (mean < 0.3 && mean >= 0.2){
         gl_FragColor = texture2D(img3, symbolCoord);
-    } else if (mean < 102){
+    } else if (mean < 0.4 && mean >= 0.3){
         gl_FragColor = texture2D(img4, symbolCoord);
-    } else if (mean < 127.5){
+    } else if (mean < 0.5 && mean >= 0.4){
         gl_FragColor = texture2D(img5, symbolCoord);
-    } else if (mean < 153){
+    } else if (mean < 0.6 && mean >= 0.5){
         gl_FragColor = texture2D(img6, symbolCoord);
-    } else if(mean < 178.5){
+    } else if(mean < 0.7 && mean >= 0.6){
         gl_FragColor = texture2D(img7, symbolCoord);
-    } else if(mean < 204){
+    } else if(mean < 0.8 && mean >= 0.7){
         gl_FragColor = texture2D(img8, symbolCoord);
-    } else if(mean < 229.5){
+    } else if(mean < 0.9 && mean >= 0.8){
         gl_FragColor = texture2D(img9, symbolCoord);
-    } else {
+    } else if(mean < 1.0 && mean >= 0.9){
         gl_FragColor = texture2D(img10, symbolCoord); 
     }
 }
