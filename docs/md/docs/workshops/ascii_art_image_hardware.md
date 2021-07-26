@@ -3,7 +3,6 @@
 El Arte ASCII es un medio artístico que utiliza recursos computarizados fundamentados en los caracteres de impresión del Código Estándar Estadounidense de Intercambio de Información. 
 
 ## Procedimiento
-Para la realizació
 Para la realización de este código se divide la imagen en secciones que dependen del slider, se tomaron los valores de luminosidad de las secciones y se reemplazaron por imágenes prerenderizadas de los símbolos del código ascii elegidos.
 
 
