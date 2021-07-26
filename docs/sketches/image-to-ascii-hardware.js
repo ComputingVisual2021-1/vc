@@ -39,10 +39,13 @@ function setup() {
     ascii.setUniform('img9', img9);
     ascii.setUniform('img10', img10);
     //seteado
+    slider = createSlider(1, 20, 10, 2);
+    slider.position(10, 10);
+    slider.style('width', '80px');
 }
 
 function draw() {    
-    ascii.setUniform("res", parseInt(1600/2));
+    ascii.setUniform("res", parseInt(1600/slider.value()));
     beginShape();
     vertex(-1600 / 2, -1600 / 2, 0, 0, 0);
     vertex(1600 / 2, -1600 / 2, 0, 1, 0);
