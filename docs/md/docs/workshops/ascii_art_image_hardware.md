@@ -11,12 +11,11 @@ El Arte ASCII es un medio artístico que utiliza recursos computarizados fundame
 > :Tabs
 > > :Tab title= **Imagen**
 > > 
-> > > :P5 sketch=/docs/sketches/image-to-ascii-hardware.js, width=512, height=512
+> > > :P5 sketch=/docs/sketches/image-to-ascii-hardware.js, width=800, height=800
 >
 > > :Tab title= **Código**
 > >
 > > ``` js
-
 > > ```
 > > 
 
