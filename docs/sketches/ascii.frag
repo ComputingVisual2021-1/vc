@@ -1,4 +1,3 @@
-//enviamos las imagenes
 uniform sampler2D aux1;
 uniform sampler2D aux2;
 uniform sampler2D aux3;
