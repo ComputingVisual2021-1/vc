@@ -71,9 +71,8 @@ Para la realización de este código se divide la imagen en secciones que depend
 > > > }
 > > >
 > > > ```
-
+>
 > > :Tab title= **Fragment shader**
-
 > > > ```
 > > > precision mediump float;
 > > > 
@@ -132,4 +131,5 @@ Para la realización de este código se divide la imagen en secciones que depend
 > > >     }
 > > > }
 > > > ```
-> > > :ToCPrevNext
+
+> :ToCPrevNext
