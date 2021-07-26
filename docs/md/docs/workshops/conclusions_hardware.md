@@ -18,9 +18,6 @@ Usar hardware para aplicar convertir una imagen en un foto mosáico es más efic
 ## AsciiArt
 Así mismo, el ascii art, si bien no era tan pesado, al tener el mismo algoritmo que el fotomosaico, es bastante eficiente y nos permite cambiar la resolución del algoritmo en tiempo real de forma bastante rápida
 
-# Time Comparasion
-Se obtuvo el tiempo de comparación entre hardware y softwar ey se obtuvieorn los siguientes resultados:
-
 
 
 > :ToCPrevNext  
