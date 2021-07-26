@@ -1,5 +1,5 @@
 let v = 1.0 / 9.0;
-let kernel = [[ v, v, v ], [ v, v, v ], [ v, v, v ]]; 
+let kernel = [[ v, v, v ], [ v, v, v ], [ v, v, v ]];
 function preload() {
   img = loadImage("/vc/docs/sketches/medieval.jpg"); 
 }

@@ -2,13 +2,8 @@ let _shader;
 let img;
 let width = 720;
 let height = 560;
-var t0, t1;
 
 function preload(){
-  t0 = performance.now()
-
-
-
     _shader = loadShader('/vc/docs/sketches/texture.vert','/vc/docs/sketches/texture.frag');
   img = loadImage('/vc/docs/sketches/cat.png');
 }
@@ -26,6 +21,4 @@ function draw() {
   vertex(width/2, height/2, 1, 1); // hr
   vertex(-width/2, height/2, 0, 1); // hl
   endShape(CLOSE);
-  t1 = performance.now()
-  console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.")
 }

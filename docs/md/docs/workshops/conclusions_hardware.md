@@ -2,25 +2,17 @@
 
 P5.js es una librería de gran uso para el procesamiento y ceración de imagenes, es muy útil, intuitivo y fácil de utilizar. Gracias a esta librería se cargaron las diferentes imágenes y videos que se utilizaron a lo largo de este taller. en este caso se utilizó para realizar las transofrmaciones usando el hardware.
 
-# Gray Scale
-## Convert a image or video to gray scale using average
-Convertir una imagen a escala de grises utilizando el promedio de los valores RGB, es una solución rápida para el  problema  y análisis de escala de grises de una imagen, sin embargo, se nota que la imagen no queda de la misma calidad y pareciera que esta pierde su resolución o enfoque, como se se ve con menos calidad. Además se noto el cambio en el performance en este taller usando el hardware, es más rápido el procesamiento. Lo mismo para el video.
+# Time Comparison
+Se obtuvo el tiempo de comparación entre hardware y software desde que se carga la imagen o video y hasta que se dibuja en la pantalla y se obtuvieron los siguientes resultados:
 
-## Convert a image or video to gray scale using Luminance
-Convertir una imagen a escala de grises utilizando la formula LUMA es una solución rápida y de mejor calidad para el problema y análisis de escala de grises de una imagen que la solución por promedio de RGB. Además se noto el cambio en el performance en este taller usando el hardware, es más rápido el procesamiento. lo mismo para el video.
-
-## Kernels on video/image
-Usar hardware para aplicar máscaras de convolución es más eficiente que en software.
-
-## PhotoMosaic
-Usar hardware para aplicar convertir una imagen en un foto mosáico es más eficiente que en hardware
-
-## AsciiArt
-Usar hardware para convertir 
-
-# Time Comparasion
-Se obtuvo el tiempo de comparación entre hardware y softwar ey se obtuvieorn los siguientes resultados:
-
-
+|Comparación|Software Time (ms)|Hardware Time(ms)|
+|-------|-------------------|-------------------|
+|Gray Scale Image Average|3032.0999999940395|198.09999999403954|
+|Gray Scale Image LUMA|6753.199999988079 |343.90000000596046|
+|Gray Scale Video Average|20 x Frame|7.80000001192093 x Frame|
+|Gray Scale Video LUMA|20 x Frame|7.09999999403954 x Frame|
+|PhotoMosaic|3828|183|
+|AsciiArt|102.09999999403954|134.599999994039541|
+|Kernel Images|10304.399999976158|128|
 
 > :ToCPrevNext  
