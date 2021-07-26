@@ -11,7 +11,7 @@ Bajo el concepto anterior, primero escogemos la imagen original que se utilizara
 > :Tabs
 > > :Tab title= **Imagen**
 > > 
-> > > :P5 sketch=/docs/sketches/mosaic-hardware.js, width=420, height=420
+> > > :P5 sketch=/docs/sketches/mosaic-hardware.js, width=750, height=900
 >
 > > :Tab title= **Código**
 > >
