@@ -44,7 +44,7 @@ function setup() {
 }
 
 function draw() {
-    let posSlider = 8
+    let posSlider = 6
     mosaic.setUniform("res", parseInt(500 / posSlider));
     beginShape();
     vertex(-700 / 2, -900 / 2, 0, 0, 0);
