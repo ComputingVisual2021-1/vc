@@ -8,6 +8,10 @@ Bajo el concepto anterior, primero escogemos la imagen original que se utilizara
 
 > :P5 sketch=/docs/sketches/perro.js, width=250, height=400
 
+Posteriormente esocogemos las imagenes que usaremos para construir el mosaico:
+
+> :P5 sketch=/docs/sketches/items.js, width=500, height=300
+
 > :Tabs
 > > :Tab title= **Imagen**
 > > 
