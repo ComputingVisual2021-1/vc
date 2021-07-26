@@ -7,7 +7,7 @@ function preload() {
     mosaic = loadShader('/vc/docs/sketches/mosaic.vert', '/vc/docs/sketches/mosaic.frag');
 
     //Cargar imagenes de dataset para mosaico
-    img1 = loadImage('/vc/docs/sketches/img1.jpg');
+    img1 = loadImage('/vc/docs/sketches/img1.jpg'); //nivel de brillo mas bajo
     img2 = loadImage('/vc/docs/sketches/img2.jpg');
     img3 = loadImage('/vc/docs/sketches/img3.jpg');
     img4 = loadImage('/vc/docs/sketches/img4.jpg');
@@ -16,7 +16,7 @@ function preload() {
     img7 = loadImage('/vc/docs/sketches/img7.jpg');
     img8 = loadImage('/vc/docs/sketches/img8.jpg');
     img9 = loadImage('/vc/docs/sketches/img9.jpg');
-    img10 = loadImage('/vc/docs/sketches/img10.jpg');
+    img10 = loadImage('/vc/docs/sketches/img10.jpg'); //nivel de brillo mas alto
     
     
 }
@@ -45,7 +45,7 @@ function setup() {
 
 function draw() {
     let posSlider = 8
-    mosaic.setUniform("resolution", parseInt(500 / posSlider));
+    mosaic.setUniform("res", parseInt(500 / posSlider));
     beginShape();
     vertex(-700 / 2, -900 / 2, 0, 0, 0);
     vertex(700 / 2, -900 / 2, 0, 1, 0);

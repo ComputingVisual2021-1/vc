@@ -8,9 +8,11 @@ Bajo el concepto anterior, primero escogemos la imagen original que se utilizara
 
 > :P5 sketch=/docs/sketches/perro.js, width=250, height=400
 
-Posteriormente esocogemos las imagenes que usaremos para construir el mosaico:
+Posteriormente esocogemos las imagenes que usaremos para construir el mosaico. para mayor exactitud toodas las imagenes fueron redimensiondas a una misma escala:
 
-> :P5 sketch=/docs/sketches/items.js, width=500, height=300
+<img src="https://i.ibb.co/JCRb77w/items.jpg" alt="items" style="width: 700px;" />
+
+El enfoque utilizado es calcular la luminocidad para cada pixel y asignarle de acuerdo a este; el valor mas cercano del arreglo de imagenes (que previamente fue organizado de acuerdo a su brillo)
 
 > :Tabs
 > > :Tab title= **Imagen**
@@ -18,10 +20,43 @@ Posteriormente esocogemos las imagenes que usaremos para construir el mosaico:
 > > > :P5 sketch=/docs/sketches/mosaic-hardware.js, width=750, height=900
 >
 > > :Tab title= **Código**
-> >
 > > ``` js
+function preload() {
+    //Precargar imagen base y shaders
+    image = loadImage('/vc/docs/sketches/main.jpg');
+    mosaic = loadShader('/vc/docs/sketches/mosaic.vert', '/vc/docs/sketches/mosaic.frag');
+    //Cargar imagenes de dataset para mosaico
+    img1 = loadImage('/vc/docs/sketches/img1.jpg'); //nivel de brillo mas bajo
+    img2 = loadImage('/vc/docs/sketches/img2.jpg');
+    img3 = loadImage('/vc/docs/sketches/img3.jpg');
+    img4 = loadImage('/vc/docs/sketches/img4.jpg');
+    img5 = loadImage('/vc/docs/sketches/img5.jpg');
+    img6 = loadImage('/vc/docs/sketches/img6.jpg');
+    img7 = loadImage('/vc/docs/sketches/img7.jpg');
+    img8 = loadImage('/vc/docs/sketches/img8.jpg');
+    img9 = loadImage('/vc/docs/sketches/img9.jpg');
+    img10 = loadImage('/vc/docs/sketches/img10.jpg'); //nivel de brillo mas alto 
+}
 > > ```
-> > 
+> > ``` js
+function preload() {
+    //Precargar imagen base y shaders
+    image = loadImage('/vc/docs/sketches/main.jpg');
+    mosaic = loadShader('/vc/docs/sketches/mosaic.vert', '/vc/docs/sketches/mosaic.frag');
+    //Cargar imagenes de dataset para mosaico
+    img1 = loadImage('/vc/docs/sketches/img1.jpg'); //nivel de brillo mas bajo
+    img2 = loadImage('/vc/docs/sketches/img2.jpg');
+    img3 = loadImage('/vc/docs/sketches/img3.jpg');
+    img4 = loadImage('/vc/docs/sketches/img4.jpg');
+    img5 = loadImage('/vc/docs/sketches/img5.jpg');
+    img6 = loadImage('/vc/docs/sketches/img6.jpg');
+    img7 = loadImage('/vc/docs/sketches/img7.jpg');
+    img8 = loadImage('/vc/docs/sketches/img8.jpg');
+    img9 = loadImage('/vc/docs/sketches/img9.jpg');
+    img10 = loadImage('/vc/docs/sketches/img10.jpg'); //nivel de brillo mas alto 
+}
+> > ```
+
 
 
 > :ToCPrevNext
