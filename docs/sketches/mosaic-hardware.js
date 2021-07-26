@@ -1,47 +1,55 @@
-//variables
-let mosaico;
+let W;
+let H;
+
+let slider;
+
+let myShader;
+
 
 function preload() {
-  mosaico = loadShader('/vc/docs/sketches/mosaic.vert', '/vc/docs/sketches/mosaic.frag');
-  imagen = loadImage('/vc/docs/sketches/main.jpg');
+    img = loadImage('/vc/docs/sketches/main.jpg');
 
-  //cargar las imagenes que van a componer el mosaico
-  aux1 = loadImage('/vc/docs/sketches/img1.jpg');
-  aux2 = loadImage('/vc/docs/sketches/img2.jpg');
-  aux3 = loadImage('/vc/docs/sketches/img3.jpg');
-  aux4 = loadImage('/vc/docs/sketches/img4.jpg');
-  aux5 = loadImage('/vc/docs/sketches/img5.jpg');
-  aux6 = loadImage('/vc/docs/sketches/img6.jpg');
-  aux7 = loadImage('/vc/docs/sketches/img7.jpg');
-  aux8 = loadImage('/vc/docs/sketches/img8.jpg');
-  aux9 = loadImage('/vc/docs/sketches/img9.jpg');
+    alpha0 = loadImage('/vc/docs/sketches/img1.jpg')
+    alpha1 = loadImage('/vc/docs/sketches/img2.jpg')
+    alpha2 = loadImage('/vc/docs/sketches/img3.jpg')
+    alpha3 = loadImage('/vc/docs/sketches/img4.jpg')
+    alpha4 = loadImage('/vc/docs/sketches/img5.jpg')
+    alpha5 = loadImage('/vc/docs/sketches/img6.jpg')
+    alpha6 = loadImage('/vc/docs/sketches/img6.jpg')
+
+    myShader = loadShader("/vc/docs/sketches/moasic.vert", "/vc/docs/sketches/mosaic.frag")
 }
 
 function setup() {
-  // put setup code here
-  createCanvas(700, 900, WEBGL);
-  textureMode(NORMAL);
-  noStroke();
-  shader(mosaico)
+    W = 500;
+    H = 500;
+    createCanvas(W, H, WEBGL);
+    textureMode(NORMAL);
+    noStroke();
+    shader(myShader);
+    myShader.setUniform("texture", img);
+    myShader.setUniform("alpha", alpha);
+    myShader.setUniform("alpha0", alpha0);
+    myShader.setUniform("alpha1", alpha1);
+    myShader.setUniform("alpha2", alpha2);
+    myShader.setUniform("alpha3", alpha3);
+    myShader.setUniform("alpha4", alpha4);
+    myShader.setUniform("alpha5", alpha5);
+    myShader.setUniform("alpha6", alpha6);
 
-  mosaico.setUniform("imagen", imagen);
-  mosaico.setUniform("aux1", aux1);
-  mosaico.setUniform("aux2", aux2);
-  mosaico.setUniform("aux3", aux3);
-  mosaico.setUniform("aux4", aux4);
-  mosaico.setUniform("aux5", aux5);
-  mosaico.setUniform("aux6", aux6);
-  mosaico.setUniform("aux7", aux7);
-  mosaico.setUniform("aux8", aux8);
-  mosaico.setUniform("aux9", aux9);
+    slider = createSlider(2, 16, 40);
+    slider.position(10, 10);
 }
 
 function draw() {
-  // put drawing code here
-  beginShape();
-  vertex(- 700 / 2, - 900 / 2, 0, 0, 0);
-  vertex(700 / 2, - 900 / 2, 0, 1, 0);
-  vertex(700 / 2, 900 / 2, 0, 1, 1);
-  vertex(- 700 / 2, 900 / 2, 0, 0, 1);
-  endShape();
+
+    let posSlider = slider.value();
+    myShader.setUniform("resolution", parseInt(500 / posSlider));
+
+    beginShape();
+    vertex(-W / 2, -H / 2, 0, 0, 0);
+    vertex(W / 2, -H / 2, 0, 1, 0);
+    vertex(W / 2, H / 2, 0, 1, 1);
+    vertex(-W / 2, H / 2, 0, 0, 1);
+    endShape();
 }
