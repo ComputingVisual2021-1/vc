@@ -1,5 +1,6 @@
 //variables
 let ascii;
+let imagen;
 
 function preload() {
   ascii = loadShader('/vc/docs/sketches/ascii.vert', '/vc/docs/sketches/ascii.frag');
