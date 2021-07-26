@@ -20,7 +20,7 @@
 > > [Problem Stament](/docs/workshops/problems_hardware_workshop)
 > > [Gray Scale of an Image](/docs/workshops/gray_scale_image_hardware)
 > > [Gray Scale of a Video](/docs/workshops/gray_scale_video_hardware)
-> > [Image to ASCII art](/docs/workshops/ascii_art_image)
+> > [Image to ASCII art](/docs/workshops/ascii_art_image_hardware)
 > > [Convert Image to PhotoMosaic](/docs/workshops/image_photomosaic)
 > > [Kernels](/docs/workshops/kernels_hardware)
 > > [Conclusions](/docs/workshops/conclusions_hardware)
