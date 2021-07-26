@@ -7,21 +7,21 @@ function preload() {
     ascii = loadShader('/vc/docs/sketches/ascii.vert', '/vc/docs/sketches/ascii.frag');
 
     //Cargar imagenes de dataset para ascii
-    img1 = loadImage('/vc/docs/sketches/ascii0.jpg'); //nivel de brillo mas bajo
-    img2 = loadImage('/vc/docs/sketches/ascii0.jpg');
-    img3 = loadImage('/vc/docs/sketches/ascii3.jpg');
-    img4 = loadImage('/vc/docs/sketches/ascii4.jpg');
+    img1 = loadImage('/vc/docs/sketches/ascii7.jpg'); //nivel de brillo mas bajo
+    img2 = loadImage('/vc/docs/sketches/ascii7.jpg');
+    img3 = loadImage('/vc/docs/sketches/ascii7.jpg');
+    img4 = loadImage('/vc/docs/sketches/ascii6.jpg');
     img5 = loadImage('/vc/docs/sketches/ascii5.jpg');
-    img6 = loadImage('/vc/docs/sketches/ascii6.jpg');
-    img7 = loadImage('/vc/docs/sketches/ascii7.jpg');
-    img8 = loadImage('/vc/docs/sketches/ascii7.jpg');
-    img9 = loadImage('/vc/docs/sketches/ascii7.jpg');
-    img10 = loadImage('/vc/docs/sketches/ascii7.jpg'); //nivel de brillo mas alto    
+    img6 = loadImage('/vc/docs/sketches/ascii4.jpg');
+    img7 = loadImage('/vc/docs/sketches/ascii3.jpg');
+    img8 = loadImage('/vc/docs/sketches/ascii2.jpg');
+    img9 = loadImage('/vc/docs/sketches/ascii1.jpg');
+    img10 = loadImage('/vc/docs/sketches/ascii0.jpg'); //nivel de brillo mas alto    
 }
 
 function setup() {
     //Crear canvas
-    createCanvas(512, 512, WEBGL);
+    createCanvas(1600, 1600, WEBGL);
     textureMode(NORMAL);
     noStroke();
     //definir los shaders a usar
@@ -41,13 +41,12 @@ function setup() {
 
 }
 
-function draw() {
-    let posSlider = 8
-    ascii.setUniform("res", parseInt(500 / posSlider));
+function draw() {    
+    ascii.setUniform("res", parseInt(512 / 32));
     beginShape();
-    vertex(-700 / 2, -900 / 2, 0, 0, 0);
-    vertex(700 / 2, -900 / 2, 0, 1, 0);
-    vertex(700 / 2, 900 / 2, 0, 1, 1);
-    vertex(-700 / 2, 900 / 2, 0, 0, 1);
+    vertex(-512 / 2, -512 / 2, 0, 0, 0);
+    vertex(512 / 2, -512 / 2, 0, 1, 0);
+    vertex(512 / 2, 512 / 2, 0, 1, 1);
+    vertex(-512 / 2, 512 / 2, 0, 0, 1);
     endShape();
 }
