@@ -1,4 +1,3 @@
-precision highp float;
 uniform sampler2D imagen;
 
 uniform sampler2D aux1;
