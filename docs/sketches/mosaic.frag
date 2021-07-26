@@ -20,7 +20,7 @@ varying vec2 vTexCoord;
 
 void main() {
 
-    vec2 gCoord = vTexCoord * re;
+    vec2 gCoord = vTexCoord * res;
 
     vec2 imgCoord = floor(gCoord);
 
