@@ -51,7 +51,7 @@ void main() {
         
     }else if(iluminacion < 0.875 && iluminacion >= 0.75){
          gl_FragColor = texture2D(aux7, realCoord);
-        
+    }    
     else{
          gl_FragColor = texture2D(aux8, realCoord);
     }
