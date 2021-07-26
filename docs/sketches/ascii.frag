@@ -1,3 +1,6 @@
+precision mediump float;
+uniform sampler2D imagen;
+
 uniform sampler2D aux1;
 uniform sampler2D aux2;
 uniform sampler2D aux3;
@@ -7,9 +10,6 @@ uniform sampler2D aux6;
 uniform sampler2D aux7;
 uniform sampler2D aux8;
 
-precision mediump float;
-
-uniform sampler2D imagen;
 
 uniform float resolution;
 
@@ -28,7 +28,7 @@ void main() {
 
     vec4 color = texture2D(imagen, imageCoord);
 
-    float iluminacion = 0.299*color.r + 0.587*color.g + 0.114*color.b;
+    float iluminacion = color.r*0.299 + color.g*0.587 + color.b*0.114;
 
     if(iluminacion < 0.125 && iluminacion >= 0.0){
          gl_FragColor = texture2D(aux1, realCoord );
@@ -54,5 +54,4 @@ void main() {
     else{
          gl_FragColor = texture2D(aux8, realCoord);
     }
-
 }
