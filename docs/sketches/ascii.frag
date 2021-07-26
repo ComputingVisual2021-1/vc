@@ -1,3 +1,4 @@
+precision highp float;
 uniform sampler2D imagen;
 
 uniform sampler2D aux1;
@@ -29,25 +30,25 @@ void main() {
 
     float iluminacion = color.r*0.299 + color.g*0.587 + color.b*0.114;
 
-    if(iluminacion < 0.125 && iluminacion >= 0.0){
+    if(iluminacion < 0.125 && iluminacion >= 0.000){
          gl_FragColor = texture2D(aux1, realCoord );
 
-    }else if(iluminacion < 0.25 && iluminacion >= 0.125){
+    }else if(iluminacion < 0.250 && iluminacion >= 0.125){
          gl_FragColor = texture2D(aux2, realCoord );
         
-    }else if(iluminacion  < 0.375 && iluminacion >= 0.25){
+    }else if(iluminacion  < 0.375 && iluminacion >= 0.250){
          gl_FragColor = texture2D(aux3, realCoord);
         
-    }else if(iluminacion < 0.5 && iluminacion >= 0.375){
+    }else if(iluminacion < 0.500 && iluminacion >= 0.375){
          gl_FragColor = texture2D(aux4, realCoord);
         
-    }else if(iluminacion < 0.625 && iluminacion >= 0.5){
+    }else if(iluminacion < 0.625 && iluminacion >= 0.500){
          gl_FragColor = texture2D(aux5, realCoord);
         
-    }else if(iluminacion < 0.75 && iluminacion >= 0.625){
+    }else if(iluminacion < 0.750 && iluminacion >= 0.625){
          gl_FragColor = texture2D(aux6, realCoord);
         
-    }else if(iluminacion < 0.875 && iluminacion >= 0.75){
+    }else if(iluminacion < 0.875 && iluminacion >= 0.750){
          gl_FragColor = texture2D(aux7, realCoord);
     }    
     else{
