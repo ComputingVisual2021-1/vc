@@ -21,7 +21,7 @@ function preload() {
 
 function setup() {
     //Crear canvas
-    createCanvas(1600, 1600, WEBGL);
+    createCanvas(800, 600, WEBGL);
     textureMode(NORMAL);
     noStroke();
     //definir los shaders a usar
@@ -47,9 +47,9 @@ function setup() {
 function draw() {    
     ascii.setUniform("res", parseInt(1600/slider.value()));
     beginShape();
-    vertex(-1600 / 2, -1600 / 2, 0, 0, 0);
-    vertex(1600 / 2, -1600 / 2, 0, 1, 0);
-    vertex(1600 / 2, 1600 / 2, 0, 1, 1);
-    vertex(-1600 / 2, 1600 / 2, 0, 0, 1);
+    vertex(-800 / 2, -600 / 2, 0, 0, 0);
+    vertex(800 / 2, -600 / 2, 0, 1, 0);
+    vertex(800 / 2, 600 / 2, 0, 1, 1);
+    vertex(-800 / 2, 600 / 2, 0, 0, 1);
     endShape();
 }
