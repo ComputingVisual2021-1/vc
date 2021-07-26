@@ -1,6 +1,7 @@
 let img;
 
 function preload() {
+
     img = loadImage('/vc/docs/sketches/cat.png');
 }
 
@@ -23,5 +24,6 @@ function draw() {
   }
   img.updatePixels();
   image(img, 0,0, 720,560);
+
 }
   

@@ -2,7 +2,6 @@ let _shader;
 let video;
 let width = 320;
 let height = 240;
-
 function preload() {
   // load the shader
   _shader = loadShader(

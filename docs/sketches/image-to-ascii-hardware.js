@@ -1,6 +1,5 @@
 let image;
 let ascii;
-
 function preload() {
     //Precargar imagen base y shaders
     image = loadImage('/vc/docs/sketches/medieval.jpg');

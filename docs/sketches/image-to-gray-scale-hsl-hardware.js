@@ -2,6 +2,7 @@ let _shader;
 let img;
 let width = 720;
 let height = 560;
+
 function preload(){
     _shader = loadShader('/vc/docs/sketches/texture.vert','/vc/docs/sketches/texture_luma.frag');
   img = loadImage('/vc/docs/sketches/cat.png');
