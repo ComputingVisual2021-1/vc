@@ -45,9 +45,9 @@ function draw() {
     
     ascii.setUniform("res", parseInt(512 / 16));
     beginShape();
-    vertex(-700 / 2, -900 / 2, 0, 0, 0);
-    vertex(700 / 2, -900 / 2, 0, 1, 0);
-    vertex(700 / 2, 900 / 2, 0, 1, 1);
-    vertex(-700 / 2, 900 / 2, 0, 0, 1);
+    vertex(-512 / 2, -512 / 2, 0, 0, 0);
+    vertex(512 / 2, -512 / 2, 0, 1, 0);
+    vertex(512 / 2, 512 / 2, 0, 1, 1);
+    vertex(-512 / 2, 512 / 2, 0, 0, 1);
     endShape();
 }
