@@ -12,5 +12,12 @@ Convertir una imagen a escala de grises utilizando la formula LUMA es una soluci
 ## Kernels on video/image
 Usar hardware para aplicar máscaras de convolución es más eficiente que en software.
 
+## PhotoMosaic
+Usar hardware para aplicar convertir una imagen en un foto mosáico es más eficiente que en software, en el anterior taller nos vimos en la necesidad de realizar la conversión de forma offline sin subir el resultado, pero en esta ocasión no hubo problemas para ejecutarlo.
+
+## AsciiArt
+Así mismo, el ascii art, si bien no era tan pesado, al tener el mismo algoritmo que el fotomosaico, es bastante eficiente y nos permite cambiar la resolución del algoritmo en tiempo real de forma bastante rápida
+
+
 
 > :ToCPrevNext  
