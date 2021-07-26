@@ -7,16 +7,16 @@ function preload() {
     ascii = loadShader('/vc/docs/sketches/ascii.vert', '/vc/docs/sketches/ascii.frag');
 
     //Cargar imagenes de dataset para ascii
-    img1 = loadImage('/vc/docs/sketches/ascii0.jpg'); //nivel de brillo mas bajo
-    img2 = loadImage('/vc/docs/sketches/ascii0.jpg');
-    img3 = loadImage('/vc/docs/sketches/ascii3.jpg');
-    img4 = loadImage('/vc/docs/sketches/ascii4.jpg');
+    img1 = loadImage('/vc/docs/sketches/ascii7.jpg'); //nivel de brillo mas bajo
+    img2 = loadImage('/vc/docs/sketches/ascii7.jpg');
+    img3 = loadImage('/vc/docs/sketches/ascii7.jpg');
+    img4 = loadImage('/vc/docs/sketches/ascii6.jpg');
     img5 = loadImage('/vc/docs/sketches/ascii5.jpg');
-    img6 = loadImage('/vc/docs/sketches/ascii6.jpg');
-    img7 = loadImage('/vc/docs/sketches/ascii7.jpg');
-    img8 = loadImage('/vc/docs/sketches/ascii7.jpg');
-    img9 = loadImage('/vc/docs/sketches/ascii7.jpg');
-    img10 = loadImage('/vc/docs/sketches/ascii7.jpg'); //nivel de brillo mas alto    
+    img6 = loadImage('/vc/docs/sketches/ascii4.jpg');
+    img7 = loadImage('/vc/docs/sketches/ascii3.jpg');
+    img8 = loadImage('/vc/docs/sketches/ascii2.jpg');
+    img9 = loadImage('/vc/docs/sketches/ascii1.jpg');
+    img10 = loadImage('/vc/docs/sketches/ascii0.jpg'); //nivel de brillo mas alto    
 }
 
 function setup() {
