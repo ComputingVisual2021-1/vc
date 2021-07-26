@@ -45,7 +45,7 @@ function setup() {
 }
 
 function draw() {    
-    ascii.setUniform("res", parseInt(1600/slider.value()));
+    ascii.setUniform("res", parseInt(800/slider.value()));
     beginShape();
     vertex(-800 / 2, -600 / 2, 0, 0, 0);
     vertex(800 / 2, -600 / 2, 0, 1, 0);
