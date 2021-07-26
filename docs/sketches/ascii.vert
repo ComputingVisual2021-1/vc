@@ -43,3 +43,4 @@ void main() {
   vTexCoord = aTexCoord;
   // vertex projection into clipspace
   gl_Position = uProjectionMatrix * uModelViewMatrix * vec4(aPosition, 1.0);
+}
